@@ -1,0 +1,641 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#more {display: none;}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6f7ff;
+}
+
+/* TOP HEADER SECTION */
+.top-header {
+    justify-content: space-between;
+    background-color: #003366; 
+}
+
+.logo {
+     display: block;
+     margin: auto;
+}
+
+
+.overlaying-text {
+    font-size: 20px;
+    position: relative;
+    z-index:100;
+    text-align: center;
+}
+
+.overlay{
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+    margin: 50px;
+}
+
+.carousel-enroll-button {
+    background-color: #14377a;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 0.8rem 1.2rem;
+}
+
+
+.campus-info {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}       
+
+
+
+
+
+.contact-numbers span {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+
+/* MAIN NAVIGATION BAR */
+.main-navbar {
+    background-color: #002244;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 999 !important;
+    }
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    background-color: #003366;
+}
+
+/* DROPDOWN STYLING */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #003366;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #294ac2;
+    color: #ffffff;
+}
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+
+/* ABOUT US SECTION */
+.about-us {
+    background: linear-gradient(135deg, #003366, #0055a5);  /* GRADIENT BACKGROUND */
+    padding: 4rem 2rem;
+    color: white;
+    text-align: justify;
+    animation: fadeInUp 1.5s ease-in;  /* SECTION-WIDE ANIMATION */
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    animation: slideInRight 1s ease;  /* ANIMATION FOR THE HEADING */
+}
+
+.about-description, strong, span {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    animation: fadeIn 1.2s ease;   /* SMOOTH FADE-IN FOR TEXT */
+}
+
+#myBtn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #ffcc00; /* READ MORE BUTTON COLOR */
+    color: #003366;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s, transform 0.2s;   /* SMOOTH TRANSITION FOR HOVER EFFECT */
+}
+
+.about-readmore-button:hover {
+    background-color: #ffc107;
+    transform: translateY(-5px);  /* SUBTLE LIFT EFFECT ON HOVER */
+}
+
+/* KEYFRAME ANIMATIONS */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Reach Us Section Styling */
+.reach-us-section {
+    padding: 4rem 2rem;
+    background-color: #f2f6fa; /* Light Background */
+    text-align: center;
+}
+
+.reach-us-container h2 {
+    font-size: 2rem;
+    color: #003366; /* Deep Blue for Title */
+    margin-bottom: 2rem;
+}
+
+.reach-us-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the boxes horizontally */
+    gap: 2rem;
+}
+
+.reach-us-box {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+    width: 100%;
+    max-width: 800px; /* Matching the width of the Upcoming School Activities section */
+    text-align: center; /* Centering text within the boxes */
+}
+
+.reach-us-box h3 {
+    font-size: 1.8rem;
+    color: #0055a5;
+    margin-bottom: 1rem;
+}
+
+.reach-us-box p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.reach-us-box a {
+    color: #0055a5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.reach-us-box iframe {
+    border-radius: 8px; /* Rounded Corners for Map */
+    width: 100%;
+    height: 280px; /* Adjusted height for better visibility */
+}
+
+
+
+
+/* SEPARATOR SECTION */
+.section-separator {
+    background-color: #003366;  /* BLUE BACKGROUND */
+    padding: 1.5rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.separator-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    animation: fadeIn 1s ease-in-out; /* SMOOTH TEXT FADE-IN */
+}
+
+.section-separator::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #ffcc00;  /* DIVIDER LINE AFTER NUNG EVENTS TEXT*/
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+/* KEYFRAMES FOR SMOOTH FADE-IN EFFECT*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* SCHOOL ACTIVITIES SECTION -- DITO UNG LALAGYAN NG IMAGES NG SCHOOL*/
+.school-activities {
+    background: linear-gradient(135deg, #f0f8ff, #e6f7ff); 
+    padding: 4rem 2rem;
+}
+
+.activities-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.school-activities h2 {
+    font-size: 2.4rem;
+    color: #003366;
+    margin-bottom: 2rem;
+    animation: fadeInDown 1.2s ease;  /* HEADING ANIMATION*/
+}
+
+/* ANIMATED ACTIVITY CARDS */
+.activity-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.activity-card:hover {
+    transform: scale(1.05);  /* SCALE ANIMATON ON HOVER */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.activity-card h3 {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-top: 1rem;
+    
+}
+
+.activity-card p {
+    font-size: 1rem;
+    text-align:justify;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ICONS OF EVENTS */
+.activity-icon {
+    font-size: 2.5rem;
+    color: white;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 1.2s ease;  /* ICON ANIMATION */ 
+}
+
+
+/* KEYFRAME ANIMATIONS FOR BOUNCE-IN AND FADE-IN */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* CONTACT US SECTION */ 
+.contact-us {
+    background: linear-gradient(135deg, #0055a5, #003366);  
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);  /* TRANSPARENT WHITE OVERLAY */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* STRONGER SHADOW FOR DEPTH */
+}
+
+.contact-us h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    animation: fadeIn 1.5s ease;  /* SMOOTH FADE-IN FOR TITLE */
+}
+
+.contact-us p {
+    color: #e0e0e0;
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);  /* LIGHT BACKGROUND FOR INPUTS */
+    color: #333;
+    font-size: 1rem;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 85, 165, 0.5);  /* BLUE GLOW */
+}
+
+.contact-submit-btn {
+    background-color: #ffcc00;  /* SUBMIT BUTTON COLOR */
+    color: #003366;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-submit-btn:hover {
+    background-color: #ffc107;
+    transform: translateY(-3px);  /* LIFT ON HOVER */
+}
+
+#form-response {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* ANIMATION FOR FADE-IN EFFECT*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* FOOTER SECTION */
+.site-footer {
+    background-color: #003366;  /* BLUE BACKGROUND */
+    color: white;
+    padding: 3rem 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    max-width: 00px;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 250px;
+    margin-bottom: 1rem;
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #e0e0e0;
+}
+
+.footer-links {
+    margin: 1rem 0;
+}
+
+.footer-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #ffcc00;  /* YELLOW LINKS SA BABA */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #ffc107;  /* SLIGHT HOVER COLOR CHANGE */
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-link i {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    color: #ffcc00;  /* ICON COLOR*/
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
